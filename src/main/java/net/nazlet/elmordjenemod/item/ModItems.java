@@ -15,6 +15,9 @@ public class ModItems {
     public static final DeferredItem<Item> TARTINE = ITEMS.register("tartine",
             () -> new Item(new Item.Properties().food(ModFoodProperties.TARTINE)));
 
+    public static final DeferredItem<Item> KEBAB = ITEMS.register("kebab",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.KEBAB)));
+
 
 
 

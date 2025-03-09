@@ -5,7 +5,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFoodProperties {
-    public static final FoodProperties ELMordjene = new FoodProperties.Builder().nutrition(10).saturationModifier(0.25f)
+    public static final FoodProperties ELMordjene = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f)
             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1.0F)
             .effect(new MobEffectInstance(MobEffects.REGENERATION, 400, 1), 1.0F)
             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3000, 0), 1.0F)
@@ -16,9 +16,13 @@ public class ModFoodProperties {
             .alwaysEdible()
             .build();
 
-    public static final FoodProperties TARTINE = new FoodProperties.Builder().nutrition(20).saturationModifier(0.25f)
-            .effect(new MobEffectInstance(MobEffects.POISON, 100, 0), 0.035F)
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1), 0.5f)
+    public static final FoodProperties TARTINE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.25f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1), 1f)
+            .alwaysEdible()
+            .build();
+
+    public static final FoodProperties KEBAB = new FoodProperties.Builder().nutrition(20).saturationModifier(1f)
+            .effect(new MobEffectInstance(MobEffects.SATURATION, 6000, 0), 1.0F)
             .alwaysEdible()
             .build();
 }

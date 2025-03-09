@@ -78,6 +78,7 @@ public class ElMordjeneMod
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.ELMordjene);
             event.accept(ModItems.TARTINE);
+            event.accept(ModItems.KEBAB);
         }
     }
 
@@ -85,7 +86,6 @@ public class ElMordjeneMod
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
-
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -99,3 +99,5 @@ public class ElMordjeneMod
         }
     }
 }
+
+

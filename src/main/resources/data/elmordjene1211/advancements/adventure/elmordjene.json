@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "elmordjene1211:elmordjene"
+    },
+    "title": {
+      "translate": "advancements.elmordjene1211.get_elmordjene.title"
+    },
+    "description": {
+      "translate": "advancements.elmordjene1211.get_elmordjene.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "elmordjene1211:elmordjene"
+          }
+        ]
+      }
+    }
+  }
+}
