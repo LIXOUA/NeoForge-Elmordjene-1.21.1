@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "get_diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond"
+    },
+    "title": {
+      "translate": "advancement.elmoldjene1211.first_advancement"
+    },
+    "description": {
+      "translate": "advancement.elmoldjene1211.first_advancement.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}

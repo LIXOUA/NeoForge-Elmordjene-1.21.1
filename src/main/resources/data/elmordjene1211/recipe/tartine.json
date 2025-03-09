@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "elmordjene1211:elmordjene"
+    },
+    {
+      "item": "minecraft:bread"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "elmordjene1211:tartine"
+  }
+}

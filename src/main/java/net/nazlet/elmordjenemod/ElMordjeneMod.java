@@ -70,10 +70,14 @@ public class ElMordjeneMod
 
     }
 
+
+
+
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.ELMordjene);
+            event.accept(ModItems.TARTINE);
         }
     }
 
