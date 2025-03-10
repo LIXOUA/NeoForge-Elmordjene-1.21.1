@@ -79,7 +79,14 @@ public class ElMordjeneMod
             event.accept(ModItems.ELMordjene);
             event.accept(ModItems.TARTINE);
             event.accept(ModItems.KEBAB);
+            event.accept(ModItems.VBUCKS);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.OP_BLOCKS){
+            event.accept(ModItems.VBUCKS);
+        }
+
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
